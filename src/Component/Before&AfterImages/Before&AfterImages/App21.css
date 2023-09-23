@@ -1,0 +1,55 @@
+/* .custom-file-input::-webkit-file-upload-button {
+    background: #fff;
+  color: #555;
+  font: inherit;
+  padding: 0;
+  position: relative;
+  border: none;
+  text-align: left;
+  position: relative;
+  z-index: 100;
+  -webkit-appearance: none;
+  }
+  .custom-file-input{
+    border: 1px solid #333;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0;
+  padding: 8px;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  width: 100%;
+  -webkit-appearance: none;
+  -webkit-box-sizing: border-box;
+  z-index: 1;
+  }
+  .custom-file-input:hover::before {
+    border-color: black;
+  }
+  .custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+  }
+  .custom-file-input::after{
+    background-color: #fff;
+  content: 'Before';
+  font-size: 20px;
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  } */
+
+
+  #opacity {
+    opacity: 0;
+  }
+  
+  #rgba {
+    color: rgba(0, 0, 0, 0);
+  }
+  

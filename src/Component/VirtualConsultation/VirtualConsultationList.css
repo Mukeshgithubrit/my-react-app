@@ -1,0 +1,203 @@
+.virtualconsultation_container {
+    background-color: #F5F5F5;
+    padding: 50px;
+}
+
+.virtualconsultation_list {
+    padding-bottom: 10px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.consultationlist_search {
+    background-image: url('../../../public/assets/searchIcon.png');
+    background-size: 25px;
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    width: 20%;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.consultationtable_list {
+    width: 100%;
+    background-color: #ffffff;
+    white-space: nowrap;
+}
+
+.consultationrow_list {
+    border-bottom: 1px solid #ebeaea;
+    box-shadow: 0 1px 6px 1px rgba(69, 65, 78, 0.1);
+    line-height: 30px;
+}
+
+.consultationtable_head,
+.consultationtable_data {
+    text-align: left;
+    padding: 8px;
+    font-size: 16px;
+    font-family: 'Open Sans';
+}
+
+.showdetails_btn {
+    background-color: #11342d;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.virtual_modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.virtualmodal_content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 40%;
+    height: 60%;
+    text-align: justify;
+}
+
+.virtualclose_modalbtn {
+    float: right;
+    border: none;
+    background-color: #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.virtualmodal_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #736c6c;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+.table-details {
+    border-collapse: collapse;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.virtual_details {
+    padding: 3px;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    vertical-align: top;
+}
+
+.virtual-pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.virtual-pagination li {
+    list-style-type: none;
+}
+
+.virtual-pagination li a {
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    background-color: gray;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.virtualtoggle-Container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 30px;
+}
+
+.virtualtoggle-content{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.virtualtoggle-switch {
+    position: relative;
+    width: 60px;
+    height: 30px;
+}
+
+.virtualtoggle-switch input {
+    display: none;
+}
+
+.virtualtoggle-switch label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #11342d;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.virtualtoggle-switch input:checked+label {
+    background-color: #ccc;
+}
+
+.virtualtoggle-switch label::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+    transition: 0.2s;
+}
+
+.virtualtoggle-switch input:checked+label::before {
+    transform: translateX(30px);
+}
+
+
+@media (max-width: 768px) {
+    .virtualmodal_content {
+        width: 80%;
+    }
+
+    .consultationlist_search {
+        width: 80%;
+    }
+
+    .virtualconsultation_container {
+        padding: 30px;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .virtualmodal_content {
+        width: 60%;
+    }
+}

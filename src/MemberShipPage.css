@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.membership_container {
+    background-color: #f2f2f2;
+    padding: 20px 40px;
+    margin: 20px;
+}
+
+.membership_content {
+    padding: 5% 20%;
+}
+
+.membership_form {
+  background-color: #ffffff;
+    padding: 20px;
+}
+
+.membership_input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.Membership_desc {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.Membership_benefits{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.MemberShipAdd_Btn {
+    padding: 12px 20px;
+    margin: 10px 0px;
+    border: none;
+    background-color: #F4E8D8;
+    border-radius: 5px;
+    font-weight: 600;
+    width: 30%;
+}
+
+.MemberShipRemove_Btn {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.Add_desc {
+    padding-top: 30px;
+}
+
+.MemberShipSubmit_Btn {
+    width: 100%;
+    background-color: #1f403d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.Membership_card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.Membership_data {
+    border: 1px solid lightgray;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Membership_data:hover {
+    transform: scale(1.04);
+  }
+  
+  .Membership_datacontent {
+    font-size: 20px;
+    margin-top: 12px;
+  }
+  
+  .Memberships_btn {
+    margin-top: 10px;
+    background-color: #ffffff;
+    color: #11342D;
+    font-weight: 400;
+    border: none;
+    border-radius: 10px;
+  }
+  .membership_contentbtn{
+    display: flex;
+    justify-content: space-between;
+  }
+  .member_modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .member_content {
+    background-color: #fff;
+    padding: 0px 20px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 45%;
+    height: 95%;
+    text-align: justify;
+    overflow-y: auto;
+  }
+
+  .close_modalbtn{
+    float: right;
+    border: none;
+    background-color: #ffffff;
+    font-size: 30px;
+  }
+
+  .modalmember_header{
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .memberShip_modalContainer{
+    background-color: #f2f2f2;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .memberShip_modalcontent{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c5c5c5;
+  }
+
+  .Membership_modalName{
+    font-family: 'Open Sans';
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .Membership_modalPrice{
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 10px;
+  }
+
+  .Membership_modalTag{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    padding: 20px 0px;
+    border-bottom: 1px solid #c5c5c5;
+  }
+  .MemberShip_Benefitsheader{
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .Membership_modalbenefits{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c5c5c5;
+  }
+  .MemberShip_modaltreatments{
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 20px;
+  }
+@media (max-width: 768px) {
+    .membership_content {
+        padding: 5%;
+    }
+}

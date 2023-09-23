@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.Slider_Container{
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.Comparison_slider{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.Before_Image{
+    background-color: #ffffff;
+    width: 340px;
+    height: 500px;
+    border: 1px solid black;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.Image_Container{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+#file{
+    position: absolute;
+    opacity: 0;
+}
+.Image_File{
+    border: 1px solid black;
+}
+.custom-file-input{
+    color: rgba(0, 0, 0, 0);
+  }
+  .before_Text{
+    position: absolute;
+    font-size: 25px;
+    width: 105px;
+    background-color: #1f403d;
+    color: #ffffff;
+  } 
+  .after_Text{
+    position: absolute;
+    font-size: 25px;
+    width: 105px;
+    background-color: #1f403d;
+    color: #ffffff;
+    padding-left: 20px;
+  } 
+  .header_name{
+    font-size: 30px;
+    padding: 20px;
+    font-weight: bold;
+    color: #1f403d;
+  }

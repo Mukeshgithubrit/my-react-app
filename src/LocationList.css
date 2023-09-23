@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.locationlist_container {
+    background-color: #F5F5F5;
+    padding: 50px;
+}
+
+.locationheader_list {
+    padding-bottom: 10px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.locationHeader_Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.location_button{
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #11342d;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+}
+
+.locationtable_container {
+    overflow-x: auto;
+}
+
+.locationtable_list {
+    width: 100%;
+    background-color: #ffffff;
+    white-space: nowrap;
+}
+
+.locationrow_list {
+    border-bottom: 1px solid #ebeaea;
+    box-shadow: 0 1px 6px 1px rgba(69, 65, 78, 0.1);
+    line-height: 30px;
+}
+
+.locationtable_head,
+.locationtable_data {
+    text-align: left;
+    padding: 8px;
+    font-size: 16px;
+    font-family: 'Open Sans';
+}
+
+.location_search {
+    background-size: 25px;
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    width: 100%;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.locationpagination_container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.locationpagination_container li {
+    list-style-type: none;
+}
+
+.locationpagination_container li a {
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    background-color: gray;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.loaction_modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .location_content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 45%;
+    height: 90%;
+    text-align: justify;
+    overflow-y: auto;
+  }
+
+  .close_locationModal{
+    float: right;
+    border: none;
+    background-color: #ffffff;
+    font-size: 30px;
+  }
+
+  .locationmodal_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #736c6c;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+.locationdetails_form {
+    padding: 20px;
+}
+
+.locationdetails_input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.remove_btn{
+    margin-left: 5%;
+    padding: 12px 20px;
+    border: none;
+}
+
+.CategoryAdd_Btn {
+    padding: 12px;
+    border: none;
+    background-color: #879795;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.locationSubmit_Btn {
+    width: 100%;
+    background-color: #1f403d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.locationconfirm_modal{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .locationmodal_content{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 35%;
+  }
+  
+  .locationmodal_button{
+    float: right;
+    padding: 10px 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .locationmodal_Yes{
+    padding: 3px 30px;
+    background-color: #1f403d;
+    color: #ffffff;
+  }
+  
+  .locationmodal_No{
+    padding: 3px 30px;
+  }
+
+  .locationdisable_btn {
+    margin: 0px 10px;
+  }
+
+  .locationtoggle_btn {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #eee;
+    outline: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: inset 0 0 5px rgb(0 0 0 / 50%);
+    margin-top: 10px;
+  }
+  
+  .locationtoggle_btn::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    border: 1px solid gray;
+  }
+  
+  .locationtoggle_btn:checked::before {
+    transform: translateX(100%);
+    background: #fff;
+  }
+  
+  .locationtoggle_btn:checked {
+    background: #1f403d;
+  }  
+
+  .Details_btn{
+    background-color: #11342d;
+    color: #ffffff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+}
+
+@media (max-width: 768px) {
+    .locationlist_container {
+        padding: 30px;
+    }
+    .location_content{
+        width: 90%;
+    }
+}
+
+@media (max-width: 540px) {
+    .locationHeader_Container {
+        display: block;
+    }
+    .location_button{
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .location_content{
+        width: 90%;
+    }
+  }
+

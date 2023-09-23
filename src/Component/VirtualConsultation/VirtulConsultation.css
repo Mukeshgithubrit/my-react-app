@@ -1,0 +1,598 @@
+.Virtual-container {
+  background-color: #f5f5f5;
+  padding-bottom: 50px;
+}
+
+.Container_Header {
+  height: 70px;
+  background: #ffffff;
+  padding: 20px 20px 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.toggle-button {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Styles for the container */
+.toggle-switch {
+  position: relative;
+  width: 60px;
+  height: 30px;
+}
+
+/* Hide the input checkbox */
+.toggle-switch input {
+  display: none;
+}
+
+/* Styles for the slider (background) */
+.toggle-switch label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* Styles for the slider when the switch is on (checked) */
+.toggle-switch input:checked+label {
+  background-color: #ccc;
+}
+
+/* Styles for the slider knob (circle) */
+.toggle-switch label::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: white;
+  transition: 0.2s;
+}
+
+/* Styles for the slider knob when the switch is on (checked) */
+.toggle-switch input:checked+label::before {
+  transform: translateX(30px);
+}
+
+.image-container1 {
+  position: relative;
+  background-size: cover;
+  left: 40%;
+}
+
+.Map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Women Front image CSS */
+
+.WF-area1 {
+  position: absolute;
+  top: 0%;
+  left: 15%;
+  width: 33%;
+  height: 18%;
+  cursor: pointer;
+}
+
+.WF-area1:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 50%;
+}
+
+.WF-area2 {
+  position: absolute;
+  top: 18%;
+  left: 14%;
+  width: 37%;
+  height: 13%;
+  cursor: pointer;
+}
+
+.WF-area2:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 20px 20px 10px 10px;
+}
+
+.WF-area3 {
+  position: absolute;
+  top: 31%;
+  left: 15%;
+  width: 35%;
+  height: 10%;
+  cursor: pointer;
+}
+
+.WF-area3:hover {
+  background-color: rgb(93 177 225 / 50%);
+}
+
+.WF-area4 {
+  position: absolute;
+  top: 41%;
+  left: 10%;
+  width: 45%;
+  height: 12%;
+  cursor: pointer;
+}
+
+.WF-area4:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 18px 18px 4px 4px;
+}
+
+.WF-area5 {
+  position: absolute;
+  top: 53%;
+  left: 11%;
+  width: 44%;
+  height: 16%;
+  cursor: pointer;
+}
+
+.WF-area5:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 5px;
+}
+
+.WF-area6 {
+  position: absolute;
+  top: 69%;
+  left: 15%;
+  width: 37%;
+  height: 30%;
+  cursor: pointer;
+}
+
+.WF-area6:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 5px 5px 15px 15px;
+}
+
+.WF-area7-1 {
+  position: absolute;
+  top: 17%;
+  left: 2%;
+  width: 11%;
+  height: 28%;
+  cursor: pointer;
+}
+
+.WF-area7-2 {
+  position: absolute;
+  top: 17%;
+  left: 51%;
+  width: 11%;
+  height: 28%;
+  cursor: pointer;
+}
+
+.WF-area7-1:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 50% 0px 0px 50%;
+}
+
+.WF-area7-2:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 0px 50% 50% 0px;
+}
+
+.WF-area7-1:hover + .WF-area7-2 {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 0px 50% 50% 0px;
+}
+
+/* Women Back image CSS */
+
+.WB-area1 {
+  position: absolute;
+  top: 0%;
+  left: 18%;
+  width: 30%;
+  height: 17%;
+  cursor: pointer;
+}
+
+.WB-area1:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 50%;
+}
+
+.WB-area2 {
+  position: absolute;
+  top: 18%;
+  left: 13%;
+  width: 38%;
+  height: 12%;
+  cursor: pointer;
+}
+
+.WB-area2:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 10px;
+}
+
+.WB-area3 {
+  position: absolute;
+  top: 30%;
+  left: 13%;
+  width: 36%;
+  height: 10%;
+  cursor: pointer;
+}
+
+.WB-area3:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 5px;
+}
+
+.WB-area4 {
+  position: absolute;
+  top: 40%;
+  left: 8%;
+  width: 45%;
+  height: 13%;
+  cursor: pointer;
+}
+
+.WB-area4:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 25px 25px 0px 0px;
+}
+
+.WB-area5 {
+  position: absolute;
+  top: 53%;
+  left: 8%;
+  width: 45%;
+  height: 15%;
+  cursor: pointer;
+}
+
+.WB-area5:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 0px 0px 20px 20px;
+}
+
+.WB-area6 {
+  position: absolute;
+  top: 68%;
+  left: 11%;
+  width: 38%;
+  height: 31%;
+  cursor: pointer;
+}
+
+.WB-area6:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 15px;
+}
+
+.WB-area7-1 {
+  position: absolute;
+  top: 17%;
+  left: 1%;
+  width: 11%;
+  height: 30%;
+  cursor: pointer;
+}
+
+.WB-area7-2 {
+  position: absolute;
+  top: 17%;
+  left: 51%;
+  width: 11%;
+  height: 30%;
+  cursor: pointer;
+}
+
+.WB-area7-1:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 50% 5px 5px 50%;
+}
+
+.WB-area7-2:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 5px 50% 50% 5px;
+}
+
+.WB-area7-1:hover+.WB-area7-2 {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 5px 50% 50% 5px;
+}
+
+/* Men Front image CSS */
+
+.MF-area1 {
+  position: absolute;
+  top: 4%;
+  left: 35%;
+  width: 28%;
+  height: 16%;
+  cursor: pointer;
+}
+
+.MF-area1:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 50%;
+}
+
+.MF-area2 {
+  position: absolute;
+  top: 20%;
+  left: 31%;
+  width: 37%;
+  height: 10%;
+  cursor: pointer;
+}
+
+.MF-area2:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 5px;
+}
+
+.MF-area3 {
+  position: absolute;
+  top: 30%;
+  left: 31%;
+  width: 36%;
+  height: 10%;
+  cursor: pointer;
+}
+
+.MF-area3:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 5px;
+}
+
+.MF-area4 {
+  position: absolute;
+  top: 40%;
+  left: 29%;
+  width: 40%;
+  height: 14%;
+  cursor: pointer;
+}
+
+.MF-area4:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 10px;
+}
+
+.MF-area5 {
+  position: absolute;
+  top: 54%;
+  left: 30%;
+  width: 38%;
+  height: 18%;
+  cursor: pointer;
+}
+
+.MF-area5:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 5px;
+}
+
+.MF-area6 {
+  position: absolute;
+  top: 72%;
+  left: 30%;
+  width: 38%;
+  height: 23%;
+  cursor: pointer;
+}
+
+.MF-area6:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 10px;
+}
+
+.MF-area7-1 {
+  position: absolute;
+  top: 22%;
+  left: 18%;
+  width: 13%;
+  height: 35%;
+  cursor: pointer;
+}
+
+.MF-area7-2 {
+  position: absolute;
+  top: 22%;
+  left: 67%;
+  width: 13%;
+  height: 35%;
+  cursor: pointer;
+}
+
+.MF-area7-1:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 50% 0px 0px 50%;
+}
+
+.MF-area7-2:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 0px 50% 50% 0px;
+}
+
+.MF-area7-1:hover+.MF-area7-2 {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 0px 50% 50% 0px;
+}
+
+/* Men Back image CSS */
+
+.MB-area1 {
+  position: absolute;
+  top: 3%;
+  left: 38%;
+  width: 23%;
+  height: 15%;
+  cursor: pointer;
+}
+
+.MB-area1:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 50%;
+}
+
+.MB-area2 {
+  position: absolute;
+  top: 18%;
+  left: 29%;
+  width: 39%;
+  height: 11%;
+  cursor: pointer;
+}
+
+.MB-area2:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 10px;
+}
+
+.MB-area3 {
+  position: absolute;
+  top: 29%;
+  left: 31%;
+  width: 35%;
+  height: 10%;
+  cursor: pointer;
+}
+
+.MB-area3:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 10px;
+}
+
+.MB-area4 {
+  position: absolute;
+  top: 39%;
+  left: 29%;
+  width: 40%;
+  height: 14%;
+  cursor: pointer;
+}
+
+.MB-area4:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 10px;
+}
+
+.MB-area5 {
+  position: absolute;
+  top: 53%;
+  left: 29%;
+  width: 39%;
+  height: 18%;
+  cursor: pointer;
+}
+
+.MB-area5:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 5px;
+}
+
+.MB-area6 {
+  position: absolute;
+  top: 71%;
+  left: 28%;
+  width: 40%;
+  height: 24%;
+  cursor: pointer;
+}
+
+.MB-area6:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 10px;
+}
+
+.MB-area7-1 {
+  position: absolute;
+  top: 21%;
+  left: 18%;
+  width: 11%;
+  height: 35%;
+  cursor: pointer;
+}
+
+.MB-area7-2 {
+  position: absolute;
+  top: 21%;
+  left: 69%;
+  width: 11%;
+  height: 35%;
+  cursor: pointer;
+}
+
+.MB-area7-1:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 50% 0px 0px 50%;
+}
+
+.MB-area7-2:hover {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 0px 50% 50% 0px;
+}
+
+.MB-area7-1:hover+.MB-area7-2 {
+  background-color: rgb(93 177 225 / 50%);
+  border-radius: 0px 50% 50% 0px;
+}
+
+.Modal-header {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Modal-content {
+  background-color: #fff;
+  padding: 0px 20px 20px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 52%;
+  height: 50%;
+  text-align: justify;
+  overflow-y: auto;
+}
+
+.Close-modal {
+  float: right;
+  border: none;
+  background-color: #ffffff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.head-symptoms{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sysmptoms_submit{
+  margin-top: 20px;
+  padding: 8px 24px;
+  background-color: #111211;
+  color: white;
+}
